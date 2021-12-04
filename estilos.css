@@ -1,0 +1,424 @@
+/* ---------- GENERAL ----------*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    padding: 0px 0 15px 0;
+    text-align: center;
+}
+
+header img {
+    height: 150px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    line-height: 120px;
+    color: white;
+    /*background: #0F2027;*/
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 0;
+    border-bottom: solid 2px #ccc;
+    padding-bottom: 5px
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0;
+    text-align: center;
+    color: black;
+}
+
+strong {
+    color: #666
+}
+
+/* ---------- NAVEGACIÓN PRINCIPAL ----------*/
+
+nav#principal {
+    margin: 0 auto;
+    
+}
+
+nav#principal ul{
+    list-style-type: none;
+    display: table-row;
+}
+
+nav#principal ul li{
+    display: table-cell;
+    width: 1%;
+} 
+
+nav#principal ul li a{
+    display: block;
+    text-align: center;
+    
+   
+    background-color: white;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+    
+} 
+
+#principal ul a:hover{
+    background-color: rgb(202, 26, 26);
+    color: white;
+} 
+
+/* ---------- IMAGEN DE FONDO PRINCIPAL ----------*/
+
+.imgFondo{
+    background-image: url(Imagenes/bapex.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 400px;
+    /* line-height: 400px; */
+    padding: 10px 300px;
+    justify-content: center;
+    border: 1px solid black;
+    
+} 
+
+
+.imgFondo h1 {
+    padding-top: 70px;
+    font-size: 6em;
+}
+
+.imgFondo section h2{
+    text-align: center;
+}
+
+.imgFondo p{
+    color: white;
+    font-size: 24px;
+}
+
+.imgFondo p:hover{
+    background-color: black;
+}
+
+/* ---------- LUGARES DESTACADOS ----------*/
+
+.lugaresDestacados section{
+    /* propiedades de flex container */
+    display: flex;
+    gap: 10px; /* espacion entre los items */
+    width: 1200px; /* ancho*/
+    margin: 10px auto; 
+    padding: 10px 10px; /* espacio entre el texto y el borde */
+    /* border: 1px solid rgb(202, 26, 26); */
+    
+    flex-wrap: wrap;
+    flex-direction:row;
+    /* align-items: stretch; alineacion de los items*/ /* cambia dependiento de la flex-direction*/ 
+    justify-content: space-evenly;  /* cambia dependiento de la flex-direction*/ 
+    /* flex-wrap: wrap;
+    align-content: flex-end; /* alineacion del contenedor aplica cuando tenemos altura definida */
+   
+    
+    /* height: 0px; */  /* altura */
+    /* overflow: scroll; espacion entre los items */  /* comportamiento de la caja con el tamaño */
+}
+
+.lugaresDestacados section article{
+    width: 255px;
+    /* flex: 1; */
+    padding-left: 6px;
+    background-color: rgb(202, 26, 26);
+    border: 1px solid rgb(202, 26, 26);
+    text-align: justify;
+}
+
+.lugaresDestacados section h1{
+    width: 100%;
+    margin: 10px 0;
+    padding-left: 25px;
+    padding-top: 2px;
+    font-size: 28px;
+    color: black;
+    text-align: left;
+    font-size: 3em;
+}
+
+.lugaresDestacados section h2{
+    text-align: left;
+}
+
+/* ---------- GALERIA ----------*/
+
+.galeria section{
+    
+    display: flex;
+    gap: 10px; /* espacion entre los items */
+    width: 1200px; /* ancho*/
+    margin: 10px auto; 
+    padding: 10px 10px; /* espacio entre el texto y el borde */
+    /* border: 1px solid rgb(202, 26, 26); */
+    
+    flex-wrap: wrap;
+    flex-direction:row;
+   /* align-items: stretch; alineacion de los items*/ /* cambia dependiento de la flex-direction*/ 
+   justify-content: space-evenly;  /* cambia dependiento de la flex-direction*/ 
+}
+
+.galeriaFotos {
+    
+    padding: 5px;
+    display: grid;
+    width: 1040px;
+    margin: 10px auto;
+    
+    
+    grid-template-columns: 260px 260px 260px 260px 260px; 
+    grid-template-rows: 160px 160px;
+    
+}
+
+.galeria h1{
+    width: 100%;
+    margin: 10px 0;
+    /*padding-left: 25px;*/
+    padding-top: 2px;
+    font-size: 28px;
+    color: black;
+    text-align: left;
+    font-size: 3em;
+} 
+
+.foto1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1 ;
+    grid-row-end: 2 ;
+    width: 100%;
+}
+
+.foto2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2 ;
+    grid-row-end: 3 ;
+}
+
+.foto3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1 ;
+    grid-row-end: 3 ;
+}
+
+.foto4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1 ;
+    grid-row-end: 2 ;  
+}
+
+.foto5 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1 ;
+    grid-row-end: 2 ;
+}
+
+.foto6 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2 ;
+    grid-row-end: 3 ;
+}
+
+/* ---------- RECOMENDACIONES ----------*/
+
+
+.recomendaciones{
+    display: flex;
+    gap: 10px; /* espacion entre los items */
+    width: 1200px; /* ancho*/
+    margin: 10px auto; 
+    padding: 10px 10px; /* espacio entre el texto y el borde */
+    /* border: 1px solid rgb(202, 26, 26); */
+    
+    flex-wrap: wrap;
+    flex-direction:row;
+   /* align-items: stretch; alineacion de los items*/ /* cambia dependiento de la flex-direction*/ 
+   justify-content: space-around;  /* cambia dependiento de la flex-direction*/ 
+
+}
+
+.recomendaciones article{
+    display: flex;
+    gap:10px;
+    /* height: 300px;*/
+    /*flex-wrap: wrap;*/
+    /*background-color: rgb(202, 26, 26); 
+    border: 1px solid black;*/
+    
+}
+
+.recomendaciones h1{
+    width: 100%;
+    margin: 10px 0;
+    /*padding-left: 25px;*/
+    padding-top: 2px;
+    font-size: 28px;
+    color: black;
+    text-align: left;
+    font-size: 3em;
+}
+
+
+
+/* ---------- TABLA ----------*/
+
+table{
+    width: 800px;
+    /*margin-left: 60px;*/
+    border-spacing: 10px;
+    text-align: center;
+}
+
+th, td{
+    padding: 10px;
+    background-color: rgb(214, 96, 96);
+    color: white;
+}
+
+th{
+    background-color: rgb(202, 26, 26);
+    color: white;
+}
+
+caption{
+    /* background-color: tomato; */
+    font-size: 32px;
+    text-align: left;
+    padding: 10px;
+}
+
+/* ---------- REGISTRO ----------*/
+
+.registro h1{
+    width: 100%;
+    margin: 10px 0;
+    /*padding-left: 25px;*/
+    padding-top: 2px;
+    font-size: 28px;
+    color: black;
+    text-align: center;
+    font-size: 3em;
+}
+
+form div {
+    width: 1400px;
+    margin: auto;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    /*background-color: rgb(202, 26, 26);*/
+    align-content: center;
+}
+
+form h2 {
+    padding: 0px;
+    text-align: center;
+}
+
+fieldset {
+    align-self: center;
+    width: 400px;
+    padding: 10px;
+    border: 0px;
+
+
+}
+fieldset p {
+    text-align: left;
+    font-size: 16px;
+}
+
+label {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+input {
+    font-size: 16px;
+    width: 100%;
+
+    height: 25px;
+}
+
+input[type="submit"] {
+    background-color: rgb(202, 26, 26);
+    color: white;
+    width: 80px;
+    height: 40px;
+    margin: 20px auto; 
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(202, 26, 26);
+    color: white;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+input[type="radio"]+label {
+    width: auto;
+}
+
+textarea {
+    width: 100%;
+}
+
+/* ---------- FOOTER ----------*/
+
+#footer{    
+    color: black;
+    height: 35px;
+    margin-top: 10px;
+    background-color: rgb(202, 26, 26);
+    padding: 10px 10px;
+    background-size: cover; 
+    text-decoration: none;
+    text-align: center;
+}
+
+a.botoncito{
+    display: block;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(202, 26, 26);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+
+
+
+
+
